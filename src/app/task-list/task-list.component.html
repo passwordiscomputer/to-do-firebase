@@ -1,0 +1,13 @@
+<h2>Task List</h2>
+
+
+<div *ngFor="let task of tasks | async"  class="panel panel-default">
+  <div class="panel-body">
+    <h3 (click)="goToDetailPage(task)" >{{task.title}} </h3>
+    <div *ngIf="router.url === '/add'">{{task.detail}}>
+      <h5>{{task.detail}}</h5>
+      <app-edit-task [selectedTask]="task"></app-edit-task>
+
+    </div>
+  </div>
+</div>

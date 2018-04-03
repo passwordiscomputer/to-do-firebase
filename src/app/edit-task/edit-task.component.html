@@ -1,0 +1,12 @@
+<h4>Edit Album</h4>
+
+<label>New Album Title:</label>
+<input [(ngModel)]="selectedTask.title">
+<br>
+
+<label>New Album Artist:</label>
+<input [(ngModel)]="selectedTask.detail">
+
+<button (click)="beginUpdatingTask(selectedTask)">Update</button>
+
+<button (click)="beginDeletingTask(selectedTask)">Update</button>

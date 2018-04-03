@@ -1,0 +1,19 @@
+<h3>Add New Album to Inventory</h3>
+<div>
+  <div>
+    <label>Task Title:</label>
+    <br>
+    <input #newTitle>
+  </div>
+
+  <div>
+    <label>Task Detail:</label>
+    <br>
+    <input #newDetail>
+  </div>
+
+  <button (click)="submitForm(newTitle.value, newDetail.value); newTitle.value = ''; newDetail.value = ''">Add</button>
+
+</div>
+
+<app-task-list></app-task-list>
